@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name basic_gates)(type Legacy)(uri /home/akshay/kicad_examples/and_sub/basic_gates.lib)(options "")(descr ""))
+  (lib (name sim_logic)(type Legacy)(uri /home/akshay/Downloads/kicad-simulation-examples-master/libs/sim_logic.lib)(options "")(descr ""))
+)

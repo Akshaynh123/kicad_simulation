@@ -1,0 +1,272 @@
+EESchema Schematic File Version 4
+LIBS:colpitt oscillator-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 5B0DB14E
+P 3000 3850
+F 0 "C1" V 2748 3850 50  0000 C CNN
+F 1 "0.1u" V 2839 3850 50  0000 C CNN
+F 2 "" H 3038 3700 50  0001 C CNN
+F 3 "~" H 3000 3850 50  0001 C CNN
+	1    3000 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5B0DB24B
+P 3650 2800
+F 0 "R2" H 3720 2846 50  0000 L CNN
+F 1 "190k" H 3720 2755 50  0000 L CNN
+F 2 "" V 3580 2800 50  0001 C CNN
+F 3 "~" H 3650 2800 50  0001 C CNN
+	1    3650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B0DB27E
+P 3600 4350
+F 0 "R1" H 3670 4396 50  0000 L CNN
+F 1 "36k" H 3670 4305 50  0000 L CNN
+F 2 "" V 3530 4350 50  0001 C CNN
+F 3 "~" H 3600 4350 50  0001 C CNN
+	1    3600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5B0DB2BC
+P 5000 2800
+F 0 "R4" H 5070 2846 50  0000 L CNN
+F 1 "4.8k" H 5070 2755 50  0000 L CNN
+F 2 "" V 4930 2800 50  0001 C CNN
+F 3 "~" H 5000 2800 50  0001 C CNN
+	1    5000 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5B0DB347
+P 4950 4350
+F 0 "R3" H 5020 4396 50  0000 L CNN
+F 1 "1.2k" H 5020 4305 50  0000 L CNN
+F 2 "" V 4880 4350 50  0001 C CNN
+F 3 "~" H 4950 4350 50  0001 C CNN
+	1    4950 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5B0DB393
+P 5650 4350
+F 0 "C2" H 5535 4304 50  0000 R CNN
+F 1 "0.1u" H 5535 4395 50  0000 R CNN
+F 2 "" H 5688 4200 50  0001 C CNN
+F 3 "~" H 5650 4350 50  0001 C CNN
+	1    5650 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5B0DB486
+P 6250 3550
+F 0 "V1" H 6478 3596 50  0000 L CNN
+F 1 "VSOURCE" H 6478 3505 50  0000 L CNN
+F 2 "" H 6250 3550 50  0001 C CNN
+F 3 "" H 6250 3550 50  0001 C CNN
+F 4 "V" H 6250 3550 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5" H 6250 3550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6250 3550 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5B0DB4CA
+P 7400 3550
+F 0 "C3" H 7285 3504 50  0000 R CNN
+F 1 "20n" H 7285 3595 50  0000 R CNN
+F 2 "" H 7438 3400 50  0001 C CNN
+F 3 "~" H 7400 3550 50  0001 C CNN
+	1    7400 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5B0DB53B
+P 7400 4400
+F 0 "C4" H 7285 4354 50  0000 R CNN
+F 1 "5n" H 7285 4445 50  0000 R CNN
+F 2 "" H 7438 4250 50  0001 C CNN
+F 3 "~" H 7400 4400 50  0001 C CNN
+	1    7400 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5B0DB5B6
+P 8250 3800
+F 0 "L1" H 8303 3846 50  0000 L CNN
+F 1 "50m" H 8303 3755 50  0000 L CNN
+F 2 "" H 8250 3800 50  0001 C CNN
+F 3 "~" H 8250 3800 50  0001 C CNN
+	1    8250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3850 3150 3600
+Wire Wire Line
+	3150 3600 3600 3600
+Wire Wire Line
+	3600 4200 3600 3600
+Connection ~ 3600 3600
+Wire Wire Line
+	3600 3600 4200 3600
+Wire Wire Line
+	3600 3600 3600 2950
+Wire Wire Line
+	3600 2950 3650 2950
+Wire Wire Line
+	3650 2650 3650 2050
+Wire Wire Line
+	3650 2050 5000 2050
+Wire Wire Line
+	5000 2050 5000 2650
+Wire Wire Line
+	3600 4500 3600 5250
+Wire Wire Line
+	3600 5250 4950 5250
+Wire Wire Line
+	4500 3800 4950 3800
+Wire Wire Line
+	4950 3800 4950 4050
+Wire Wire Line
+	4500 3400 5000 3400
+Wire Wire Line
+	5000 3400 5000 3100
+Wire Wire Line
+	5650 4200 5650 4050
+Wire Wire Line
+	5650 4050 4950 4050
+Connection ~ 4950 4050
+Wire Wire Line
+	4950 4050 4950 4200
+Wire Wire Line
+	4950 5250 5300 5250
+Wire Wire Line
+	6250 5250 6250 3850
+Connection ~ 4950 5250
+Wire Wire Line
+	4950 4500 4950 5250
+Wire Wire Line
+	5650 4500 5650 5250
+Connection ~ 5650 5250
+Wire Wire Line
+	5650 5250 6250 5250
+Wire Wire Line
+	6250 3250 6250 2050
+Wire Wire Line
+	6250 2050 5000 2050
+Connection ~ 5000 2050
+Wire Wire Line
+	2850 3850 2850 5950
+Wire Wire Line
+	2850 5950 7400 5950
+Wire Wire Line
+	7400 5950 7400 4550
+Wire Wire Line
+	7400 4250 7400 3950
+Wire Wire Line
+	7400 3400 7400 3100
+Wire Wire Line
+	7400 3100 5000 3100
+Connection ~ 5000 3100
+Wire Wire Line
+	5000 3100 5000 2950
+Wire Wire Line
+	7400 5950 8250 5950
+Wire Wire Line
+	8250 5950 8250 3950
+Connection ~ 7400 5950
+Wire Wire Line
+	8250 3650 8250 3100
+Wire Wire Line
+	8250 3100 7400 3100
+Connection ~ 7400 3100
+$Comp
+L power:GND #PWR01
+U 1 1 5B0DE237
+P 5300 5550
+F 0 "#PWR01" H 5300 5300 50  0001 C CNN
+F 1 "GND" H 5305 5377 50  0000 C CNN
+F 2 "" H 5300 5550 50  0001 C CNN
+F 3 "" H 5300 5550 50  0001 C CNN
+	1    5300 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5550 5300 5250
+Connection ~ 5300 5250
+Wire Wire Line
+	5300 5250 5650 5250
+$Comp
+L power:GND #PWR02
+U 1 1 5B0DE71B
+P 7850 4100
+F 0 "#PWR02" H 7850 3850 50  0001 C CNN
+F 1 "GND" H 7855 3927 50  0000 C CNN
+F 2 "" H 7850 4100 50  0001 C CNN
+F 3 "" H 7850 4100 50  0001 C CNN
+	1    7850 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 4100 7850 3950
+Wire Wire Line
+	7850 3950 7400 3950
+Connection ~ 7400 3950
+Wire Wire Line
+	7400 3950 7400 3700
+Text GLabel 8650 2550 0    50   Output ~ 0
+out
+Wire Wire Line
+	8650 2550 8800 2550
+Wire Wire Line
+	8800 2550 8800 2100
+Wire Wire Line
+	8800 2100 8250 2100
+Wire Wire Line
+	8250 2100 8250 3100
+Connection ~ 8250 3100
+$Comp
+L Transistor_BJT:BC548 Q1
+U 1 1 5B0E8A8C
+P 4400 3600
+F 0 "Q1" H 4591 3646 50  0000 L CNN
+F 1 "BC548" H 4591 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4600 3525 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 4400 3600 50  0001 L CNN
+F 4 "Q" H 4400 3600 50  0001 C CNN "Spice_Primitive"
+F 5 "BC548" H 4400 3600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4400 3600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/akshay/Downloads/Rc_Phase_Shift_Oscillator_By_Ms_Rohini.n,_Parkavi.k/NPN.lib" H 4400 3600 50  0001 C CNN "Spice_Lib_File"
+	1    4400 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 9050 5350 0    50   ~ 0
+.tran .25m 30m
+$EndSCHEMATC

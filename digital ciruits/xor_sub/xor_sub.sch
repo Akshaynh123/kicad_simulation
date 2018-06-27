@@ -1,0 +1,204 @@
+EESchema Schematic File Version 4
+LIBS:xor_sub-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L xor_sub-rescue:XOR-Logic_Gates X1
+U 1 1 5B29C95E
+P 5350 3150
+F 0 "X1" H 5350 3425 50  0000 C CNN
+F 1 "XOR" H 5350 3334 50  0000 C CNN
+F 2 "" H 5350 3150 50  0001 C CNN
+F 3 "" H 5350 3150 50  0001 C CNN
+F 4 "X" H 5350 3150 50  0001 C CNN "Spice_Primitive"
+F 5 "XOR" H 5350 3150 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5350 3150 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/akshay/Desktop/digital ciruits/libs/spice_models.lib" H 5350 3150 50  0001 C CNN "Spice_Lib_File"
+	1    5350 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5B29C9FA
+P 3800 3300
+F 0 "V1" H 4028 3346 50  0000 L CNN
+F 1 "VSOURCE" H 4028 3255 50  0000 L CNN
+F 2 "" H 3800 3300 50  0001 C CNN
+F 3 "" H 3800 3300 50  0001 C CNN
+F 4 "V" H 3800 3300 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 0 pulse(0 3.3 0 0 0 50m 100m)" H 3800 3300 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3800 3300 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3800 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V3
+U 1 1 5B29CA60
+P 8400 3400
+F 0 "V3" H 8628 3446 50  0000 L CNN
+F 1 "VSOURCE" H 8628 3355 50  0000 L CNN
+F 2 "" H 8400 3400 50  0001 C CNN
+F 3 "" H 8400 3400 50  0001 C CNN
+F 4 "V" H 8400 3400 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 3.3" H 8400 3400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8400 3400 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V2
+U 1 1 5B29CAF4
+P 4500 3650
+F 0 "V2" H 4728 3696 50  0000 L CNN
+F 1 "VSOURCE" H 4728 3605 50  0000 L CNN
+F 2 "" H 4500 3650 50  0001 C CNN
+F 3 "" H 4500 3650 50  0001 C CNN
+F 4 "V" H 4500 3650 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 0 pulse(0 3.3 100m 0 0 50m 100m)" H 4500 3650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4500 3650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B29CB8E
+P 6250 3200
+F 0 "R1" V 6043 3200 50  0000 C CNN
+F 1 "10meg" V 6134 3200 50  0000 C CNN
+F 2 "" V 6180 3200 50  0001 C CNN
+F 3 "~" H 6250 3200 50  0001 C CNN
+	1    6250 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5B29CC31
+P 3800 3800
+F 0 "#PWR01" H 3800 3550 50  0001 C CNN
+F 1 "GND" H 3805 3627 50  0000 C CNN
+F 2 "" H 3800 3800 50  0001 C CNN
+F 3 "" H 3800 3800 50  0001 C CNN
+	1    3800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5B29CC70
+P 4500 4150
+F 0 "#PWR02" H 4500 3900 50  0001 C CNN
+F 1 "GND" H 4505 3977 50  0000 C CNN
+F 2 "" H 4500 4150 50  0001 C CNN
+F 3 "" H 4500 4150 50  0001 C CNN
+	1    4500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5B29CC85
+P 6650 3400
+F 0 "#PWR04" H 6650 3150 50  0001 C CNN
+F 1 "GND" H 6655 3227 50  0000 C CNN
+F 2 "" H 6650 3400 50  0001 C CNN
+F 3 "" H 6650 3400 50  0001 C CNN
+	1    6650 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 3200 6050 3200
+Wire Wire Line
+	6400 3200 6650 3200
+Wire Wire Line
+	6650 3200 6650 3400
+Wire Wire Line
+	3800 3000 4100 3000
+Wire Wire Line
+	5000 3000 5000 3100
+Wire Wire Line
+	4500 3350 4500 3200
+Wire Wire Line
+	4500 3200 4700 3200
+$Comp
+L power:VDD #PWR03
+U 1 1 5B29CD7F
+P 5800 3050
+F 0 "#PWR03" H 5800 2900 50  0001 C CNN
+F 1 "VDD" H 5817 3223 50  0000 C CNN
+F 2 "" H 5800 3050 50  0001 C CNN
+F 3 "" H 5800 3050 50  0001 C CNN
+	1    5800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR05
+U 1 1 5B29CDB4
+P 8400 3050
+F 0 "#PWR05" H 8400 2900 50  0001 C CNN
+F 1 "VDD" H 8417 3223 50  0000 C CNN
+F 2 "" H 8400 3050 50  0001 C CNN
+F 3 "" H 8400 3050 50  0001 C CNN
+	1    8400 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5B29CDF6
+P 8400 3750
+F 0 "#PWR06" H 8400 3500 50  0001 C CNN
+F 1 "GND" H 8405 3577 50  0000 C CNN
+F 2 "" H 8400 3750 50  0001 C CNN
+F 3 "" H 8400 3750 50  0001 C CNN
+	1    8400 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3100 8400 3050
+Wire Wire Line
+	8400 3750 8400 3700
+Wire Wire Line
+	5800 3050 5800 3100
+Wire Wire Line
+	5800 3100 5700 3100
+Wire Wire Line
+	3800 3800 3800 3600
+Wire Wire Line
+	4500 4150 4500 3950
+Text GLabel 6050 2750 0    50   Output ~ 0
+out
+Wire Wire Line
+	6050 2750 6050 3200
+Connection ~ 6050 3200
+Wire Wire Line
+	6050 3200 6100 3200
+Text GLabel 4000 2650 0    50   Input ~ 0
+a
+Wire Wire Line
+	4000 2650 4100 2650
+Wire Wire Line
+	4100 2650 4100 3000
+Connection ~ 4100 3000
+Wire Wire Line
+	4100 3000 5000 3000
+Text GLabel 4600 3100 0    50   Input ~ 0
+b
+Wire Wire Line
+	4600 3100 4700 3100
+Wire Wire Line
+	4700 3100 4700 3200
+Connection ~ 4700 3200
+Wire Wire Line
+	4700 3200 5000 3200
+Text Notes 6400 5250 0    50   ~ 0
+.tran .25m 30m
+$EndSCHEMATC

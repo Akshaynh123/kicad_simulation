@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name Logic_Gates)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/Project/nor_sub/Logic_Gates.lib)(options "")(descr ""))
+  (lib (name nor_sub-rescue)(type Legacy)(uri ${KIPRJMOD}/nor_sub-rescue.lib)(options "")(descr ""))
+  (lib (name nor_sub)(type Legacy)(uri "/home/akshay/Desktop/digital ciruits/nor_sub/nor_sub.lib")(options "")(descr ""))
+  (lib (name fossee_sim_logic)(type Legacy)(uri "/home/akshay/Desktop/digital ciruits/libs/fossee_sim_logic.lib")(options "")(descr ""))
+  (lib (name sim_logic)(type Legacy)(uri "/home/akshay/Desktop/digital ciruits/libs/sim_logic.lib")(options "")(descr ""))
+)

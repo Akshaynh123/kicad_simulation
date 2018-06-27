@@ -1,0 +1,69 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# GND-sallen_key_schlib
+#
+DEF GND-sallen_key_schlib #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND-sallen_key_schlib" 0 -150 50 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Q_NPN_CBE-laser_driver_schlib
+#
+DEF Q_NPN_CBE-laser_driver_schlib Q 0 0 Y N 1 F N
+F0 "Q" 300 50 50 H V R CNN
+F1 "Q_NPN_CBE-laser_driver_schlib" 600 -50 50 H V R CNN
+F2 "" 200 100 29 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 50 0 111 0 1 10 N
+P 2 0 1 0 25 25 100 100 N
+P 3 0 1 0 25 -25 100 -100 100 -100 N
+P 3 0 1 20 25 75 25 -75 25 -75 N
+P 5 0 1 0 50 -70 70 -50 90 -90 50 -70 50 -70 F
+X C 1 100 200 100 D 50 50 1 1 P
+X B 2 -200 0 225 R 50 50 1 1 I
+X E 3 100 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# VDD-laser_driver_schlib
+#
+DEF VDD-laser_driver_schlib #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "VDD-laser_driver_schlib" 0 150 50 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VDD 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# VSOURCE-laser_driver_schlib
+#
+DEF ~VSOURCE-laser_driver_schlib V 0 40 Y Y 1 F N
+F0 "V" 200 200 50 H V C CNN
+F1 "VSOURCE-laser_driver_schlib" 250 100 50 H I C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+F4 "Value" 0 0 60 H I C CNN "Fieldname"
+F5 "V" 0 0 60 H I C CNN "Spice_Primitive"
+F6 "1 2" -300 200 60 H I C CNN "Spice_Node_Sequence"
+DRAW
+C 0 0 100 0 1 0 N
+P 2 0 1 0 0 -75 0 75 N
+P 4 0 1 0 0 75 -25 25 25 25 0 75 F
+X ~ 1 0 200 100 D 50 50 1 1 I
+X ~ 2 0 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library

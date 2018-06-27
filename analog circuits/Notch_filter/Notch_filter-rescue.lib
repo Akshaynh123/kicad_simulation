@@ -1,0 +1,81 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# GND-sallen_key_schlib
+#
+DEF GND-sallen_key_schlib #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND-sallen_key_schlib" 0 -150 50 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Generic_Opamp-sallen_key_schlib
+#
+DEF Generic_Opamp-sallen_key_schlib U 0 20 Y Y 1 F N
+F0 "U" 0 250 50 H V L CNN
+F1 "Generic_Opamp-sallen_key_schlib" 0 150 50 H V L CNN
+F2 "" -100 -100 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+P 4 0 1 10 -200 200 200 0 -200 -200 -200 200 f
+X + 1 -300 100 100 R 50 50 1 1 I
+X - 2 -300 -100 100 R 50 50 1 1 I
+X V+ 3 -100 300 150 D 50 50 1 1 W
+X V- 4 -100 -300 150 U 50 50 1 1 W
+X ~ 5 300 0 100 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# VDD-sallen_key_schlib
+#
+DEF VDD-sallen_key_schlib #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "VDD-sallen_key_schlib" 0 150 50 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VDD 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# VSOURCE-sallen_key_schlib
+#
+DEF ~VSOURCE-sallen_key_schlib V 0 40 Y Y 1 F N
+F0 "V" 200 200 50 H V C CNN
+F1 "VSOURCE-sallen_key_schlib" 250 100 50 H I C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+F4 "Value" 0 0 60 H I C CNN "Fieldname"
+F5 "V" 0 0 60 H I C CNN "Spice_Primitive"
+F6 "1 2" -300 200 60 H I C CNN "Spice_Node_Sequence"
+DRAW
+C 0 0 100 0 1 0 N
+P 2 0 1 0 0 -75 0 75 N
+P 4 0 1 0 0 75 -25 25 25 25 0 75 F
+X ~ 1 0 200 100 D 50 50 1 1 I
+X ~ 2 0 -200 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# VSS-sallen_key_schlib
+#
+DEF VSS-sallen_key_schlib #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "VSS-sallen_key_schlib" 0 150 50 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VSS 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library

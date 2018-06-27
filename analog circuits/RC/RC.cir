@@ -1,0 +1,6 @@
+.title KiCad schematic
+V1 ip GND pwl(0m 0 0.5m 5 50m 5 50.5m 0 100m 0)
+R1 out ip 1k
+C1 out GND 10u
+.tran 5m 100m
+.end

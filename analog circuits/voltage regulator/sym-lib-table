@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name laser_driver_schlib)(type Legacy)(uri /home/akshay/kicad-source-mirror-master/demos/simulation/laser_driver/laser_driver_schlib.lib)(options "")(descr ""))
+)

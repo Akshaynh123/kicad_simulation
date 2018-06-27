@@ -1,0 +1,166 @@
+EESchema Schematic File Version 4
+LIBS:voltage doubler-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5B0E3691
+P 3100 4150
+F 0 "V1" H 3328 4196 50  0000 L CNN
+F 1 "VSOURCE" H 3328 4105 50  0000 L CNN
+F 2 "" H 3100 4150 50  0001 C CNN
+F 3 "" H 3100 4150 50  0001 C CNN
+F 4 "V" H 3100 4150 50  0001 C CNN "Spice_Primitive"
+F 5 "sin(0 20 1000)" H 3100 4150 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3100 4150 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5B0E3707
+P 4100 3600
+F 0 "C1" V 3848 3600 50  0000 C CNN
+F 1 "100u" V 3939 3600 50  0000 C CNN
+F 2 "" H 4138 3450 50  0001 C CNN
+F 3 "~" H 4100 3600 50  0001 C CNN
+	1    4100 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_ALT D1
+U 1 1 5B0E37E5
+P 4800 4250
+F 0 "D1" V 4754 4329 50  0000 L CNN
+F 1 "D_ALT" V 4845 4329 50  0000 L CNN
+F 2 "" H 4800 4250 50  0001 C CNN
+F 3 "~" H 4800 4250 50  0001 C CNN
+F 4 "D" H 4800 4250 50  0001 C CNN "Spice_Primitive"
+F 5 "D_ALT" H 4800 4250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4800 4250 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "2 1" H 4800 4250 50  0001 C CNN "Spice_Node_Sequence"
+	1    4800 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_ALT D2
+U 1 1 5B0E3825
+P 5400 3600
+F 0 "D2" H 5400 3384 50  0000 C CNN
+F 1 "D_ALT" H 5400 3475 50  0000 C CNN
+F 2 "" H 5400 3600 50  0001 C CNN
+F 3 "~" H 5400 3600 50  0001 C CNN
+F 4 "D" H 5400 3600 50  0001 C CNN "Spice_Primitive"
+F 5 "D_ALT" H 5400 3600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5400 3600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "2 1" H 5400 3600 50  0001 C CNN "Spice_Node_Sequence"
+	1    5400 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5B0E3882
+P 6200 4000
+F 0 "C2" H 6085 3954 50  0000 R CNN
+F 1 "100u" H 6085 4045 50  0000 R CNN
+F 2 "" H 6238 3850 50  0001 C CNN
+F 3 "~" H 6200 4000 50  0001 C CNN
+	1    6200 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B0E392D
+P 7050 4000
+F 0 "R1" H 7120 4046 50  0000 L CNN
+F 1 "20k" H 7120 3955 50  0000 L CNN
+F 2 "" V 6980 4000 50  0001 C CNN
+F 3 "~" H 7050 4000 50  0001 C CNN
+	1    7050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3850 3100 3600
+Wire Wire Line
+	3100 3600 3950 3600
+Wire Wire Line
+	4250 3600 4800 3600
+Wire Wire Line
+	4800 3600 4800 4100
+Wire Wire Line
+	4800 3600 5250 3600
+Connection ~ 4800 3600
+Wire Wire Line
+	5550 3600 6200 3600
+Wire Wire Line
+	6200 3600 6200 3850
+Wire Wire Line
+	6200 3600 7050 3600
+Wire Wire Line
+	7050 3600 7050 3850
+Connection ~ 6200 3600
+Wire Wire Line
+	3100 4450 3100 4750
+Wire Wire Line
+	3100 4750 4800 4750
+Wire Wire Line
+	4800 4750 4800 4400
+Wire Wire Line
+	4800 4750 5600 4750
+Wire Wire Line
+	6200 4750 6200 4150
+Connection ~ 4800 4750
+Wire Wire Line
+	6200 4750 7050 4750
+Wire Wire Line
+	7050 4750 7050 4150
+Connection ~ 6200 4750
+$Comp
+L power:GND #PWR01
+U 1 1 5B0E3C1D
+P 5600 5000
+F 0 "#PWR01" H 5600 4750 50  0001 C CNN
+F 1 "GND" H 5605 4827 50  0000 C CNN
+F 2 "" H 5600 5000 50  0001 C CNN
+F 3 "" H 5600 5000 50  0001 C CNN
+	1    5600 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 5000 5600 4750
+Connection ~ 5600 4750
+Wire Wire Line
+	5600 4750 6200 4750
+Text GLabel 7600 3400 0    50   Output ~ 0
+out
+Wire Wire Line
+	7600 3400 7750 3400
+Wire Wire Line
+	7750 3400 7750 3000
+Wire Wire Line
+	7750 3000 7050 3000
+Wire Wire Line
+	7050 3000 7050 3600
+Connection ~ 7050 3600
+Text GLabel 2650 3300 0    50   Input ~ 0
+ip
+Wire Wire Line
+	2650 3300 3100 3300
+Wire Wire Line
+	3100 3300 3100 3600
+Connection ~ 3100 3600
+Text Notes 7350 5850 0    50   ~ 0
+.tran .25m 30m
+$EndSCHEMATC

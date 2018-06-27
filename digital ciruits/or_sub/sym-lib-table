@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name basic_logicgates)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/Project/or_sub/basic_logicgates.lib)(options "")(descr ""))
+  (lib (name Logic_Gates)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/Project/or_sub/Logic_Gates.lib)(options "")(descr ""))
+  (lib (name or_sub-rescue)(type Legacy)(uri ${KIPRJMOD}/or_sub-rescue.lib)(options "")(descr ""))
+)

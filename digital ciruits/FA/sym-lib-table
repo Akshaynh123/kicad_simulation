@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name and_sub)(type Legacy)(uri H:/and_sub/and_sub.lib)(options "")(descr ""))
+  (lib (name or_sub)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/Project/or_sub/or_sub.lib)(options "")(descr ""))
+  (lib (name xor_sub)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/Project/xor_sub/xor_sub.lib)(options "")(descr ""))
+  (lib (name FA-rescue)(type Legacy)(uri ${KIPRJMOD}/FA-rescue.lib)(options "")(descr ""))
+)

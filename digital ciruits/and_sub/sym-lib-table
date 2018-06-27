@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name basic_gates)(type Legacy)(uri /home/akshay/kicad_examples/and_sub/basic_gates.lib)(options "")(descr ""))
+)

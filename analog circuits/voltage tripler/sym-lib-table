@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name basic_gates)(type Legacy)(uri /home/akshay/kicad_examples/and_sub/basic_gates.lib)(options "")(descr ""))
+  (lib (name rectifier_schlib)(type Legacy)(uri /home/akshay/kicad-source-mirror-master/demos/simulation/rectifier/rectifier_schlib.lib)(options "")(descr ""))
+)

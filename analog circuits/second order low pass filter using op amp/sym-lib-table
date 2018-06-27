@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name sallen_key_schlib)(type Legacy)(uri /home/akshay/kicad-source-mirror-master/demos/simulation/sallen_key/sallen_key_schlib.lib)(options "")(descr ""))
+)

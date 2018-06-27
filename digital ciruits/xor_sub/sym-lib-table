@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Logic_Gates)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/Project/xor_sub/Logic_Gates.lib)(options "")(descr ""))
+  (lib (name xor_sub-rescue)(type Legacy)(uri ${KIPRJMOD}/xor_sub-rescue.lib)(options "")(descr ""))
+)

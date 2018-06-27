@@ -1,0 +1,320 @@
+EESchema Schematic File Version 4
+LIBS:Notch_filter-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5B0F87D4
+P 4850 3500
+F 0 "R1" V 4643 3500 50  0000 C CNN
+F 1 "5.6k" V 4734 3500 50  0000 C CNN
+F 2 "" V 4780 3500 50  0001 C CNN
+F 3 "~" H 4850 3500 50  0001 C CNN
+	1    4850 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5B0F881C
+P 4850 3800
+F 0 "R2" V 4643 3800 50  0000 C CNN
+F 1 "5.6k" V 4734 3800 50  0000 C CNN
+F 2 "" V 4780 3800 50  0001 C CNN
+F 3 "~" H 4850 3800 50  0001 C CNN
+	1    4850 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5B0F8AE7
+P 5900 4100
+F 0 "R3" H 5970 4146 50  0000 L CNN
+F 1 "5.6k" H 5970 4055 50  0000 L CNN
+F 2 "" V 5830 4100 50  0001 C CNN
+F 3 "~" H 5900 4100 50  0001 C CNN
+	1    5900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5B0F8BDD
+P 6700 2700
+F 0 "R4" V 6493 2700 50  0000 C CNN
+F 1 "5.6k" V 6584 2700 50  0000 C CNN
+F 2 "" V 6630 2700 50  0001 C CNN
+F 3 "~" H 6700 2700 50  0001 C CNN
+	1    6700 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5B0F8CC2
+P 5500 3500
+F 0 "C1" V 5248 3500 50  0000 C CNN
+F 1 "0.1u" V 5339 3500 50  0000 C CNN
+F 2 "" H 5500 3500 50  0001 C CNN
+F 3 "~" H 5500 3500 50  0001 C CNN
+	1    5500 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 5B0F8D1B
+P 6200 2250
+F 0 "C2" V 5948 2250 50  0000 C CNN
+F 1 "1000p" V 6039 2250 50  0000 C CNN
+F 2 "" H 6200 2250 50  0001 C CNN
+F 3 "~" H 6200 2250 50  0001 C CNN
+	1    6200 2250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5000 3500 5100 3500
+Wire Wire Line
+	5650 3500 6000 3500
+Wire Wire Line
+	6250 3700 5900 3700
+Wire Wire Line
+	5900 3700 5900 3800
+Wire Wire Line
+	5000 3800 5900 3800
+Connection ~ 5900 3800
+Wire Wire Line
+	5900 3800 5900 3950
+Wire Wire Line
+	4700 3500 4450 3500
+Wire Wire Line
+	4450 3500 4450 3650
+Wire Wire Line
+	4450 3800 4700 3800
+Wire Wire Line
+	3050 3650 4450 3650
+Connection ~ 4450 3650
+Wire Wire Line
+	4450 3650 4450 3800
+Wire Wire Line
+	3050 5150 5900 5150
+Wire Wire Line
+	5900 5150 5900 4250
+Wire Wire Line
+	6850 3600 7450 3600
+Connection ~ 5900 5150
+Wire Wire Line
+	6000 3500 6000 2700
+Wire Wire Line
+	6000 2700 6550 2700
+Connection ~ 6000 3500
+Wire Wire Line
+	6000 3500 6250 3500
+Wire Wire Line
+	6850 2700 7450 2700
+Wire Wire Line
+	7450 2700 7450 3400
+Wire Wire Line
+	7450 2700 7450 2250
+Wire Wire Line
+	7450 2250 6350 2250
+Connection ~ 7450 2700
+Wire Wire Line
+	6050 2250 5100 2250
+Wire Wire Line
+	5100 2250 5100 3500
+Connection ~ 5100 3500
+Wire Wire Line
+	5100 3500 5350 3500
+$Comp
+L power:GND #PWR01
+U 1 1 5B0FA1F1
+P 5900 5400
+F 0 "#PWR01" H 5900 5150 50  0001 C CNN
+F 1 "GND" H 5905 5227 50  0000 C CNN
+F 2 "" H 5900 5400 50  0001 C CNN
+F 3 "" H 5900 5400 50  0001 C CNN
+	1    5900 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5400 5900 5250
+Text GLabel 7350 3400 0    50   Output ~ 0
+out
+Wire Wire Line
+	7350 3400 7450 3400
+Connection ~ 7450 3400
+Wire Wire Line
+	7450 3400 7450 3600
+$Comp
+L Device:R R5
+U 1 1 5B0FAD6E
+P 7450 4300
+F 0 "R5" H 7520 4346 50  0000 L CNN
+F 1 "5.6k" H 7520 4255 50  0000 L CNN
+F 2 "" V 7380 4300 50  0001 C CNN
+F 3 "~" H 7450 4300 50  0001 C CNN
+	1    7450 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3600 7450 4150
+Connection ~ 7450 3600
+Wire Wire Line
+	7450 4450 7450 5150
+Wire Wire Line
+	7450 5150 5900 5150
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5B0FB6BE
+P 5200 5250
+F 0 "#FLG01" H 5200 5325 50  0001 C CNN
+F 1 "PWR_FLAG" H 5200 5424 50  0000 C CNN
+F 2 "" H 5200 5250 50  0001 C CNN
+F 3 "~" H 5200 5250 50  0001 C CNN
+	1    5200 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5250 5900 5250
+Connection ~ 5900 5250
+Wire Wire Line
+	5900 5250 5900 5150
+$Comp
+L Notch_filter-rescue:VSOURCE-sallen_key_schlib V1
+U 1 1 57336052
+P 3050 4450
+F 0 "V1" H 3178 4496 50  0000 L CNN
+F 1 "AC 1" H 3178 4405 50  0000 L CNN
+F 2 "" H 3050 4450 50  0000 C CNN
+F 3 "" H 3050 4450 50  0000 C CNN
+F 4 "V" H 3050 4450 50  0001 C CNN "Spice_Primitive"
+F 5 "ac 1" H 3050 4450 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3050 4450 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3050 4450
+	1    0    0    -1  
+$EndComp
+Text Notes 7800 3450 0    60   ~ 0
+.ac dec 10 1 1Meg\n
+$Comp
+L Notch_filter-rescue:Generic_Opamp-sallen_key_schlib U1
+U 1 1 5788FF9F
+P 6550 3600
+F 0 "U1" H 6650 3750 50  0000 L CNN
+F 1 "AD8051" H 6600 3450 50  0000 L CNN
+F 2 "" H 6450 3500 50  0000 C CNN
+F 3 "" H 6550 3600 50  0000 C CNN
+F 4 "X" H 6550 3600 60  0001 C CNN "Spice_Primitive"
+F 5 "AD8051" H 6550 3600 60  0001 C CNN "Spice_Model"
+F 6 "/home/akshay/Desktop/analog circuits/libs/ad8051.lib" H 6550 3600 60  0001 C CNN "Spice_Lib_File"
+F 7 "Y" H 6550 3600 60  0001 C CNN "Spice_Netlist_Enabled"
+	1    6550 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Notch_filter-rescue:VSOURCE-sallen_key_schlib V2
+U 1 1 578900BA
+P 9650 1850
+F 0 "V2" H 9778 1896 50  0000 L CNN
+F 1 "DC 10" H 9778 1805 50  0000 L CNN
+F 2 "" H 9650 1850 50  0000 C CNN
+F 3 "" H 9650 1850 50  0000 C CNN
+F 4 "Value" H 9650 1850 60  0001 C CNN "Fieldname"
+F 5 "V" H 9650 1850 60  0001 C CNN "Spice_Primitive"
+F 6 "1 2" H 9350 2050 60  0001 C CNN "Spice_Node_Sequence"
+	1    9650 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Notch_filter-rescue:VSOURCE-sallen_key_schlib V3
+U 1 1 57890232
+P 9650 2350
+F 0 "V3" H 9778 2396 50  0000 L CNN
+F 1 "DC 10" H 9778 2305 50  0000 L CNN
+F 2 "" H 9650 2350 50  0000 C CNN
+F 3 "" H 9650 2350 50  0000 C CNN
+F 4 "Value" H 9650 2350 60  0001 C CNN "Fieldname"
+F 5 "V" H 9650 2350 60  0001 C CNN "Spice_Primitive"
+F 6 "1 2" H 9350 2550 60  0001 C CNN "Spice_Node_Sequence"
+	1    9650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Notch_filter-rescue:GND-sallen_key_schlib #PWR04
+U 1 1 578902D2
+P 9400 2100
+F 0 "#PWR04" H 9400 1850 50  0001 C CNN
+F 1 "GND" H 9405 1927 50  0000 C CNN
+F 2 "" H 9400 2100 50  0000 C CNN
+F 3 "" H 9400 2100 50  0000 C CNN
+	1    9400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Notch_filter-rescue:VDD-sallen_key_schlib #PWR05
+U 1 1 578903C0
+P 9650 1600
+F 0 "#PWR05" H 9650 1450 50  0001 C CNN
+F 1 "VDD" H 9667 1773 50  0000 C CNN
+F 2 "" H 9650 1600 50  0000 C CNN
+F 3 "" H 9650 1600 50  0000 C CNN
+	1    9650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Notch_filter-rescue:VSS-sallen_key_schlib #PWR06
+U 1 1 578903E2
+P 9650 2600
+F 0 "#PWR06" H 9650 2450 50  0001 C CNN
+F 1 "VSS" H 9668 2773 50  0000 C CNN
+F 2 "" H 9650 2600 50  0000 C CNN
+F 3 "" H 9650 2600 50  0000 C CNN
+	1    9650 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Notch_filter-rescue:VDD-sallen_key_schlib #PWR02
+U 1 1 57890425
+P 6450 3300
+F 0 "#PWR02" H 6450 3150 50  0001 C CNN
+F 1 "VDD" H 6467 3473 50  0000 C CNN
+F 2 "" H 6450 3300 50  0000 C CNN
+F 3 "" H 6450 3300 50  0000 C CNN
+	1    6450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Notch_filter-rescue:VSS-sallen_key_schlib #PWR03
+U 1 1 57890453
+P 6450 3900
+F 0 "#PWR03" H 6450 3750 50  0001 C CNN
+F 1 "VSS" H 6468 4073 50  0000 C CNN
+F 2 "" H 6450 3900 50  0000 C CNN
+F 3 "" H 6450 3900 50  0000 C CNN
+	1    6450 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9650 2100 9400 2100
+Wire Wire Line
+	9650 2600 9650 2550
+Wire Wire Line
+	9650 1600 9650 1650
+Wire Wire Line
+	9650 2050 9650 2100
+Connection ~ 9650 2100
+Wire Wire Line
+	9650 2100 9650 2150
+Wire Wire Line
+	3050 3650 3050 4250
+Wire Wire Line
+	3050 4650 3050 5150
+$EndSCHEMATC

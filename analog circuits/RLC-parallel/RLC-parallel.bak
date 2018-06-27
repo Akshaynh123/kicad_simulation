@@ -1,0 +1,120 @@
+EESchema Schematic File Version 4
+LIBS:esim-11-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5B090E79
+P 4200 3550
+F 0 "V1" H 4428 3596 50  0000 L CNN
+F 1 "VSOURCE" H 4428 3505 50  0000 L CNN
+F 2 "" H 4200 3550 50  0001 C CNN
+F 3 "" H 4200 3550 50  0001 C CNN
+F 4 "V" H 4200 3550 50  0001 C CNN "Spice_Primitive"
+F 5 "ac 5 0" H 4200 3550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4200 3550 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    4200 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B090F12
+P 6300 3000
+F 0 "R1" H 6370 3046 50  0000 L CNN
+F 1 "1k" H 6370 2955 50  0000 L CNN
+F 2 "" V 6230 3000 50  0001 C CNN
+F 3 "~" H 6300 3000 50  0001 C CNN
+	1    6300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5B090F9F
+P 6300 3850
+F 0 "L1" H 6353 3896 50  0000 L CNN
+F 1 "100m" H 6353 3805 50  0000 L CNN
+F 2 "" H 6300 3850 50  0001 C CNN
+F 3 "~" H 6300 3850 50  0001 C CNN
+	1    6300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5B091068
+P 7100 3350
+F 0 "C1" H 7215 3396 50  0000 L CNN
+F 1 "0.1u" H 7215 3305 50  0000 L CNN
+F 2 "" H 7138 3200 50  0001 C CNN
+F 3 "~" H 7100 3350 50  0001 C CNN
+	1    7100 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3250 4200 2600
+Wire Wire Line
+	4200 2600 6300 2600
+Wire Wire Line
+	6300 2600 6300 2850
+Wire Wire Line
+	6300 3150 6300 3700
+Wire Wire Line
+	7100 3200 7100 2600
+Wire Wire Line
+	7100 2600 6300 2600
+Connection ~ 6300 2600
+Wire Wire Line
+	4200 3850 4200 4200
+Wire Wire Line
+	4200 4200 5650 4200
+Wire Wire Line
+	6300 4200 6300 4000
+Wire Wire Line
+	7100 3500 7100 4200
+Wire Wire Line
+	7100 4200 6300 4200
+Connection ~ 6300 4200
+$Comp
+L power:GND #PWR0101
+U 1 1 5B09125A
+P 5650 4450
+F 0 "#PWR0101" H 5650 4200 50  0001 C CNN
+F 1 "GND" H 5655 4277 50  0000 C CNN
+F 2 "" H 5650 4450 50  0001 C CNN
+F 3 "" H 5650 4450 50  0001 C CNN
+	1    5650 4450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5650 4200
+Wire Wire Line
+	5650 4200 6300 4200
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5B09135C
+P 5100 4400
+F 0 "#FLG0101" H 5100 4475 50  0001 C CNN
+F 1 "PWR_FLAG" H 5100 4574 50  0000 C CNN
+F 2 "" H 5100 4400 50  0001 C CNN
+F 3 "~" H 5100 4400 50  0001 C CNN
+	1    5100 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4400 5650 4400
+Wire Wire Line
+	5650 4200 5650 4400
+Connection ~ 5650 4400
+Wire Wire Line
+	5650 4400 5650 4450
+$EndSCHEMATC

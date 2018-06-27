@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name sim_logic)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/new_file/libs/sim_logic.lib)(options "")(descr ""))
+  (lib (name johnson_counter-rescue)(type Legacy)(uri ${KIPRJMOD}/johnson_counter-rescue.lib)(options "")(descr ""))
+)

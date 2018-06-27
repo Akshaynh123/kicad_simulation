@@ -1,0 +1,226 @@
+EESchema Schematic File Version 4
+LIBS:voltage tripler-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5B0A1122
+P 3150 4200
+F 0 "V1" H 3378 4246 50  0000 L CNN
+F 1 "VSOURCE" H 3378 4155 50  0000 L CNN
+F 2 "" H 3150 4200 50  0001 C CNN
+F 3 "" H 3150 4200 50  0001 C CNN
+F 4 "V" H 3150 4200 50  0001 C CNN "Spice_Primitive"
+F 5 "sin(0 5 1000)" H 3150 4200 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3150 4200 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5B0A1393
+P 4050 4750
+F 0 "C1" H 3935 4704 50  0000 R CNN
+F 1 "100u" H 3935 4795 50  0000 R CNN
+F 2 "" H 4088 4600 50  0001 C CNN
+F 3 "~" H 4050 4750 50  0001 C CNN
+	1    4050 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5B0A14A1
+P 5850 4100
+F 0 "C3" H 5735 4054 50  0000 R CNN
+F 1 "100u" H 5735 4145 50  0000 R CNN
+F 2 "" H 5888 3950 50  0001 C CNN
+F 3 "~" H 5850 4100 50  0001 C CNN
+	1    5850 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 3900 3150 3400
+Wire Wire Line
+	4650 3400 4650 3600
+Wire Wire Line
+	4100 3700 4100 4050
+Wire Wire Line
+	4100 4050 4150 4050
+Wire Wire Line
+	4450 4050 4450 3400
+Wire Wire Line
+	4450 3400 4650 3400
+Wire Wire Line
+	4100 4050 4100 4600
+Wire Wire Line
+	4100 4600 4050 4600
+Connection ~ 4100 4050
+Wire Wire Line
+	5800 3600 5850 3600
+Wire Wire Line
+	5850 3600 5850 3950
+Wire Wire Line
+	5850 3600 6250 3600
+Connection ~ 5850 3600
+Wire Wire Line
+	3150 4500 3150 4900
+Wire Wire Line
+	3150 4900 4050 4900
+Wire Wire Line
+	4050 4900 4800 4900
+Connection ~ 4050 4900
+Wire Wire Line
+	5850 4250 5850 4900
+$Comp
+L power:GND #PWR01
+U 1 1 5B0A1C04
+P 4800 5200
+F 0 "#PWR01" H 4800 4950 50  0001 C CNN
+F 1 "GND" H 4805 5027 50  0000 C CNN
+F 2 "" H 4800 5200 50  0001 C CNN
+F 3 "" H 4800 5200 50  0001 C CNN
+	1    4800 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 5200 4800 5150
+Connection ~ 4800 4900
+Wire Wire Line
+	4800 4900 5850 4900
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5B0A1F21
+P 5150 5150
+F 0 "#FLG0101" H 5150 5225 50  0001 C CNN
+F 1 "PWR_FLAG" H 5150 5324 50  0000 C CNN
+F 2 "" H 5150 5150 50  0001 C CNN
+F 3 "~" H 5150 5150 50  0001 C CNN
+	1    5150 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 5150 4800 5150
+Connection ~ 4800 5150
+Wire Wire Line
+	4800 5150 4800 4900
+Text GLabel 6700 3400 0    50   Output ~ 0
+out
+Wire Wire Line
+	6700 3400 7100 3400
+Wire Wire Line
+	7100 3400 7100 2950
+Text GLabel 2300 3100 0    50   Input ~ 0
+ip
+Wire Wire Line
+	2300 3100 3150 3100
+Wire Wire Line
+	3150 3100 3150 3400
+Connection ~ 3150 3400
+Text Notes 7650 5350 0    50   ~ 0
+.tran .25m 30m
+$Comp
+L Diode:1N4001 D3
+U 1 1 5B2CC805
+P 5650 3600
+F 0 "D3" H 5650 3384 50  0000 C CNN
+F 1 "1N4001" H 5650 3475 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5650 3425 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5650 3600 50  0001 C CNN
+F 4 "D" H 5650 3600 50  0001 C CNN "Spice_Primitive"
+F 5 "1N4001" H 5650 3600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 5650 3600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "2 1" H 5650 3600 50  0001 C CNN "Spice_Node_Sequence"
+	1    5650 3600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3150 3400 4100 3400
+$Comp
+L Diode:1N4001 D2
+U 1 1 5B2CC8B2
+P 4300 4050
+F 0 "D2" H 4300 3834 50  0000 C CNN
+F 1 "1N4001" H 4300 3925 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4300 3875 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4300 4050 50  0001 C CNN
+F 4 "D" H 4300 4050 50  0001 C CNN "Spice_Primitive"
+F 5 "1N4001" H 4300 4050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4300 4050 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "2 1" H 4300 4050 50  0001 C CNN "Spice_Node_Sequence"
+	1    4300 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4001 D1
+U 1 1 5B2CC97F
+P 4100 3550
+F 0 "D1" V 4146 3471 50  0000 R CNN
+F 1 "1N4001" V 4055 3471 50  0000 R CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4100 3375 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 4100 3550 50  0001 C CNN
+F 4 "D" H 4100 3550 50  0001 C CNN "Spice_Primitive"
+F 5 "1N4001" H 4100 3550 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4100 3550 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "2 1" H 4100 3550 50  0001 C CNN "Spice_Node_Sequence"
+	1    4100 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5B2CCF47
+P 6250 4200
+F 0 "R1" H 6320 4246 50  0000 L CNN
+F 1 "10k" H 6320 4155 50  0000 L CNN
+F 2 "" V 6180 4200 50  0001 C CNN
+F 3 "~" H 6250 4200 50  0001 C CNN
+F 4 "R" H 6250 4200 50  0001 C CNN "Spice_Primitive"
+F 5 "40k" H 6250 4200 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6250 4200 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    6250 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4050 6250 3600
+Wire Wire Line
+	6250 4350 6250 4900
+Wire Wire Line
+	6250 4900 5850 4900
+Connection ~ 5850 4900
+Wire Wire Line
+	4650 3600 5500 3600
+Wire Wire Line
+	5850 3600 5850 2950
+Wire Wire Line
+	5850 2950 7100 2950
+$Comp
+L Device:C C2
+U 1 1 5B2CE053
+P 4300 3000
+F 0 "C2" H 4185 2954 50  0000 R CNN
+F 1 "100u" H 4185 3045 50  0000 R CNN
+F 2 "" H 4338 2850 50  0001 C CNN
+F 3 "~" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 3400 4450 3000
+Connection ~ 4450 3400
+Wire Wire Line
+	4150 3000 4150 3400
+Wire Wire Line
+	4150 3400 4100 3400
+Connection ~ 4100 3400
+$EndSCHEMATC
