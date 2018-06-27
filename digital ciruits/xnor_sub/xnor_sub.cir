@@ -1,0 +1,9 @@
+.title KiCad schematic
+.include "/home/akshay/Desktop/digital ciruits/libs/spice_models.lib"
+V1 a GND dc 0 pulse(0 3.3 0 0 0 50m 100m)
+V3 VDD GND dc 3.3
+R1 GND out 10meg
+X1 a b out VDD XNOR
+V2 b GND dc 0 pulse(0 3.3 100m 0 0 50m 100m)
+.tran .25m 30m
+.end

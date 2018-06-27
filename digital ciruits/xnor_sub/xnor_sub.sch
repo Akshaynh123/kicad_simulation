@@ -1,0 +1,212 @@
+EESchema Schematic File Version 4
+LIBS:xnor_sub-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5B29FD8B
+P 3250 3250
+F 0 "V1" H 3478 3296 50  0000 L CNN
+F 1 "VSOURCE" H 3478 3205 50  0000 L CNN
+F 2 "" H 3250 3250 50  0001 C CNN
+F 3 "" H 3250 3250 50  0001 C CNN
+F 4 "V" H 3250 3250 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 0 pulse(0 3.3 0 0 0 50m 100m)" H 3250 3250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3250 3250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3250 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V3
+U 1 1 5B29FDD5
+P 8950 4050
+F 0 "V3" H 9178 4096 50  0000 L CNN
+F 1 "VSOURCE" H 9178 4005 50  0000 L CNN
+F 2 "" H 8950 4050 50  0001 C CNN
+F 3 "" H 8950 4050 50  0001 C CNN
+F 4 "V" H 8950 4050 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 3.3" H 8950 4050 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 8950 4050 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    8950 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR03
+U 1 1 5B29FE4D
+P 6800 2800
+F 0 "#PWR03" H 6800 2650 50  0001 C CNN
+F 1 "VDD" H 6817 2973 50  0000 C CNN
+F 2 "" H 6800 2800 50  0001 C CNN
+F 3 "" H 6800 2800 50  0001 C CNN
+	1    6800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2950 6800 2800
+$Comp
+L power:VDD #PWR05
+U 1 1 5B29FE95
+P 8950 3700
+F 0 "#PWR05" H 8950 3550 50  0001 C CNN
+F 1 "VDD" H 8967 3873 50  0000 C CNN
+F 2 "" H 8950 3700 50  0001 C CNN
+F 3 "" H 8950 3700 50  0001 C CNN
+	1    8950 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 3750 8950 3700
+$Comp
+L power:GND #PWR01
+U 1 1 5B29FF03
+P 3250 3750
+F 0 "#PWR01" H 3250 3500 50  0001 C CNN
+F 1 "GND" H 3255 3577 50  0000 C CNN
+F 2 "" H 3250 3750 50  0001 C CNN
+F 3 "" H 3250 3750 50  0001 C CNN
+	1    3250 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2950 3850 2950
+Wire Wire Line
+	3250 3750 3250 3550
+Wire Wire Line
+	3850 3400 4250 3400
+$Comp
+L power:GND #PWR02
+U 1 1 5B2A00CA
+P 3850 4150
+F 0 "#PWR02" H 3850 3900 50  0001 C CNN
+F 1 "GND" H 3855 3977 50  0000 C CNN
+F 2 "" H 3850 4150 50  0001 C CNN
+F 3 "" H 3850 4150 50  0001 C CNN
+	1    3850 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5B2A016E
+P 8950 4500
+F 0 "#PWR06" H 8950 4250 50  0001 C CNN
+F 1 "GND" H 8955 4327 50  0000 C CNN
+F 2 "" H 8950 4500 50  0001 C CNN
+F 3 "" H 8950 4500 50  0001 C CNN
+	1    8950 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 4500 8950 4350
+$Comp
+L Device:R R1
+U 1 1 5B2A0259
+P 6700 3250
+F 0 "R1" V 6493 3250 50  0000 C CNN
+F 1 "10meg" V 6584 3250 50  0000 C CNN
+F 2 "" V 6630 3250 50  0001 C CNN
+F 3 "~" H 6700 3250 50  0001 C CNN
+	1    6700 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5B2A02B1
+P 7250 3300
+F 0 "#PWR04" H 7250 3050 50  0001 C CNN
+F 1 "GND" H 7255 3127 50  0000 C CNN
+F 2 "" H 7250 3300 50  0001 C CNN
+F 3 "" H 7250 3300 50  0001 C CNN
+	1    7250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 3250 7250 3300
+Text GLabel 3850 2600 0    50   Input ~ 0
+a
+Text GLabel 4150 3150 0    50   Input ~ 0
+b
+Wire Wire Line
+	3850 2600 3850 2950
+Wire Wire Line
+	4150 3150 4250 3150
+Wire Wire Line
+	4250 3150 4250 3400
+Wire Wire Line
+	6850 3250 7250 3250
+Wire Wire Line
+	5550 3050 5700 3050
+Wire Wire Line
+	5700 3050 5700 2950
+Wire Wire Line
+	5700 2950 6800 2950
+Wire Wire Line
+	6150 3200 6150 3250
+Wire Wire Line
+	5550 3200 6150 3200
+Wire Wire Line
+	3850 2950 4850 2950
+Wire Wire Line
+	4850 2950 4850 3050
+Connection ~ 3850 2950
+Wire Wire Line
+	4250 3400 4850 3400
+Wire Wire Line
+	4850 3400 4850 3200
+Connection ~ 4250 3400
+$Comp
+L xnor_sub-rescue:XNOR-xnor_sub X1
+U 1 1 5B30F6D2
+P 5300 3400
+F 0 "X1" H 5200 3991 39  0000 C CNN
+F 1 "XNOR" H 5200 3916 39  0000 C CNN
+F 2 "" H 5150 3750 50  0001 C CNN
+F 3 "" H 5150 3750 50  0001 C CNN
+F 4 "X" H 5300 3400 50  0001 C CNN "Spice_Primitive"
+F 5 "Y" H 5300 3400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 6 "/home/akshay/Desktop/digital ciruits/libs/spice_models.lib" H 5300 3400 50  0001 C CNN "Spice_Lib_File"
+F 7 "XNOR" H 5300 3400 50  0001 C CNN "Spice_Model"
+	1    5300 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V2
+U 1 1 5B321690
+P 3850 3700
+F 0 "V2" H 4078 3746 50  0000 L CNN
+F 1 "VSOURCE" H 4078 3655 50  0000 L CNN
+F 2 "" H 3850 3700 50  0001 C CNN
+F 3 "" H 3850 3700 50  0001 C CNN
+F 4 "V" H 3850 3700 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 0 pulse(0 3.3 100m 0 0 50m 100m)" H 3850 3700 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3850 3700 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 4000 3850 4150
+Text GLabel 6350 3100 0    50   Output ~ 0
+out
+Wire Wire Line
+	6150 3250 6450 3250
+Wire Wire Line
+	6350 3100 6450 3100
+Wire Wire Line
+	6450 3100 6450 3250
+Connection ~ 6450 3250
+Wire Wire Line
+	6450 3250 6550 3250
+Text Notes 7750 5300 0    50   ~ 0
+.tran .25m 30m
+$EndSCHEMATC

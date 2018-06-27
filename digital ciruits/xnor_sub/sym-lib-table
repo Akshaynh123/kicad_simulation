@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name Logic_Gates)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/Project/xnor_sub/Logic_Gates.lib)(options "")(descr ""))
+  (lib (name xnor_sub-rescue)(type Legacy)(uri ${KIPRJMOD}/xnor_sub-rescue.lib)(options "")(descr ""))
+  (lib (name xnor_sub)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/Project/xnor_sub/xnor_sub.lib)(options "")(descr ""))
+  (lib (name xor_sub)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/Project/xor_sub/xor_sub.lib)(options "")(descr ""))
+  (lib (name or_sub)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/Project/or_sub/or_sub.lib)(options "")(descr ""))
+  (lib (name nor_sub)(type Legacy)(uri C:/Users/Mind/Downloads/Kicad/Project/nor_sub/nor_sub.lib)(options "")(descr ""))
+)
